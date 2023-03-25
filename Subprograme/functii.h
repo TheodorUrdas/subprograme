@@ -73,3 +73,11 @@ int DouaNumere(int a[], int n, int sumaA, int p) {
 	}
 	return sumaMax;
 }
+
+void stergere(int v[], int& n, int p) {
+
+	for (int i = p; i < n; i++) {
+		v[i] = v[i + 1];
+	}
+	n--;
+}
